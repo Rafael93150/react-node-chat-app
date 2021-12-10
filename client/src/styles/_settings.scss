@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+
+$font-1: 'Sora', sans-serif;
+$color-1: #F7F1ED;
+$color-2: #FEBEB0;
+$color-3: #3D5A5B;
+$color-4: #44318D;
+$color-5: #534490;
+$color-6: #eae6f5;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font-1;
+    background-color: $color-1;
+}

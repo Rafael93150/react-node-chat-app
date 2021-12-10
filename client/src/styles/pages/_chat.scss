@@ -1,0 +1,61 @@
+.chat{
+    position: relative;
+    
+    .render-chat{
+        background-color: $color-6;
+        height: 60vh;
+        overflow-y: scroll;
+        margin: 20px;
+        padding: 0 20px;
+        border: solid 5px white;
+        border-radius: 5px;
+        @media (min-width: 1000px) {
+            margin: 20px 20%;
+        }
+    }
+    .input-chat{
+        // background-color: #fff;
+        margin: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        flex-wrap: wrap;
+        @media (min-width: 1000px) {
+            margin: 0 20%;
+        }
+    }
+    .input-name, .input-message{
+        padding: 10px;
+        border: solid 1px gray;
+        border-radius: 5px;
+        font-family: $font-1;
+        font-weight: 600;
+        color: #555;
+        &::placeholder{
+            font-family: $font-1;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    .input-name{
+        margin-left: 20px;
+        @media (min-width: 1000px) {
+            margin-left: 20%;
+        }
+    }
+    .input-message{
+        width: calc(100% - 100px);
+    }
+    button{
+        background-color: $color-4;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            background-color: $color-5;
+        }
+    }
+}

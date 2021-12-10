@@ -1,0 +1,40 @@
+.navigation{
+    display: flex;
+    background-color: white;
+    margin: 0;
+    border-bottom: solid 1px rgb(192, 192, 192);
+    width: 100%;
+    margin-bottom: 40px;
+
+    a{
+        font-weight: bold;
+        font-size: 20px;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        @media (max-width: 999px) {
+            font-size: 15px;
+        }
+    }
+    .active{
+        color: $color-4;
+        &::after{
+            content: '';
+            width: 85%;
+            height: 5px;
+            background-color: $color-4;
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    @media (min-width: 1000px) {
+        .first-link{
+            margin-left: calc(20% - 20px);
+        }
+        
+    }
+}

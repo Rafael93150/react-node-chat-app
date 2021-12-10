@@ -1,0 +1,4 @@
+@import './settings'; //à placer à la première ligne pour être lu en premier
+@import './components/navigation';
+@import './components/footer';
+@import './pages/chat';
