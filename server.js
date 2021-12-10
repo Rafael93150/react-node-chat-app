@@ -1,12 +1,11 @@
-require('dotenv').config({path: './config/.env'}); //Variables d'environnement
-
+require('dotenv').config({path: './.env'}); //Variables d'environnement
 
 const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
-
 const path = require('path');
+
 const PORT = process.env.PORT || 5000;
 
 console.log('test');
@@ -23,11 +22,11 @@ io.on('connection', (socket) => {
     });
 
     connectCounter = io.engine.clientsCount;
-    console.log('a user connected, '+connectCounter+' connected');
+    // console.log('a user connected, '+connectCounter+' connected');
 
-    socket.on('disconnect', () => {
-      console.log('a user disconnected');
-    });
+    // socket.on('disconnect', () => {
+    //   console.log('a user disconnected');
+    // });
 });
 
 
