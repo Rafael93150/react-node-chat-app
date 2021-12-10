@@ -10,6 +10,8 @@ const io = require('socket.io')(http);
 const path = require('path');
 const PORT = process.env.PORT || 5000;
 
+console.log('test');
+
 // app.use(express.json());
 
 // app.use(express.static('client/build'));
