@@ -6,9 +6,15 @@ const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 const path = require('path');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 7000;
 
-console.log('test');
+app.use(express.json());
+
+app.use(express.static('client/build'));
+
+app.get('/*', (_, res) => {
+  res.sendFile(path.join(__dirname, './client/build/index.html'));
+});
 
 let connectCounter;
 
