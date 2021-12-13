@@ -1,18 +1,27 @@
 .chat{
     position: relative;
+    flex: 1;
     
-    .render-chat{
+    .render-chat-div{
         background-color: $color-6;
         height: 60vh;
-        overflow-y: scroll;
         margin: 20px;
-        padding: 0 20px;
         border: solid 5px white;
         border-radius: 5px;
         @media (min-width: 1000px) {
             margin: 20px 20%;
         }
     }
+
+    .render-chat{
+        padding: 0 20px;
+        overflow: hidden;
+        font-size: 15px;
+        @media (max-width: 999px) {
+            font-size: 10px;
+        }
+    }
+
     .input-chat{
         // background-color: #fff;
         margin: 0 20px;

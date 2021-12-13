@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import io from "socket.io-client";
+import ReactScrollableFeed from 'react-scrollable-feed';
 
 
 const Chat = () => {
@@ -50,8 +51,8 @@ const Chat = () => {
                     value={state.name} 
                     label="Name"/>
 
-                <div className="render-chat">
-                    {renderChat()}
+                <div className="render-chat-div">
+                    <ReactScrollableFeed className='render-chat'>{renderChat()}</ReactScrollableFeed>
                 </div>
 
                 <div className="input-chat">
