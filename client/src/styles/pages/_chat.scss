@@ -1,6 +1,5 @@
 .chat{
     position: relative;
-    flex: 1;
     
     .render-chat-div{
         background-color: $color-6;
@@ -23,12 +22,12 @@
     }
 
     .input-chat{
-        // background-color: #fff;
         margin: 0 20px;
         display: flex;
         justify-content: space-between;
         padding: 0;
         flex-wrap: wrap;
+        margin-bottom: 50px;
         @media (min-width: 1000px) {
             margin: 0 20%;
         }
@@ -49,12 +48,14 @@
     }
     .input-name{
         margin-left: 20px;
+        margin-top: 40px;
         @media (min-width: 1000px) {
             margin-left: 20%;
         }
     }
     .input-message{
         width: calc(100% - 100px);
+        
     }
     button{
         background-color: $color-4;
